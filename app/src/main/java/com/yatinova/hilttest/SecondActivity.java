@@ -14,7 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint;
 public class SecondActivity extends AppCompatActivity {
     private ImageView image;
     @Inject
-    public NetDataTest netDataTest;
+    public NetDataModule netDataTest;
     @Inject
     public User user;
 

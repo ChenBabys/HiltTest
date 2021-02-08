@@ -19,7 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint;
 @AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
     @Inject
-    public NetDataTest netDataTest;
+    public NetDataModule netDataTest;
     private TextView textView;
     @Inject
     public User user;

@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'dagger.hilt.android.plugin'
 }
-//apply plugin: 'dagger.hilt.android.plugin'
+//apply plugin: 'dagger.hilt.android.plugin'   //换成上面这种方式plugin了
 
 android {
     compileSdkVersion 30
@@ -35,7 +35,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation "com.google.dagger:hilt-android:2.28.3-alpha"
-    //For Kotlin use kapt instead of annotationProcessor(版本要和上面的一致)
+    //if For Kotlin should use kapt instead of annotationProcessor(如果是科特林则应该把annotationProcessor换成kapt,版本也要和上面的一致)
     annotationProcessor "com.google.dagger:hilt-android-compiler:2.28.3-alpha"
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

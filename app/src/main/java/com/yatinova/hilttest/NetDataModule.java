@@ -18,10 +18,10 @@ import dagger.hilt.android.components.ApplicationComponent;
 
 @Module
 @InstallIn(ApplicationComponent.class)
-public class NetDataTest {
+public class NetDataModule {
     //居然还要加入构造方法的注入（ @Inject）才可以配合@Provides的相应方法有效性。
     @Inject
-    public NetDataTest() {
+    public NetDataModule() {
     }
 
     @Provides
